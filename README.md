@@ -3,7 +3,7 @@ See the Live App here [https://interactive-form-cards.netlify.app/](https://inte
 <br />
 
 <div align="center">
-  <img alt="Demo" src="src/assets/Demo.png" />
+  <img alt="Demo" src="src/Assets/Demo.png" />
 </div>
 <br/>
 
