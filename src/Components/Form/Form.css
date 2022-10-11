@@ -1,0 +1,206 @@
+.form_left{
+    background-image: url('../../Assets/bg-main-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.form_mid{
+    width: 20vw;
+}
+.form_right{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_right form{
+    width: 60%;
+}
+.form_submitted{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.card_front{
+    background-image: url('../../Assets/bg-card-front.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    right: -100px;
+    top: 20%;
+    padding: 1rem;
+    box-shadow: -5px 5px 20px 2px #4A4A4A33;
+}
+.card_back{
+    background-image: url('../../Assets/bg-card-back.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    right: -200px;
+    bottom: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 5px 20px 2px #4A4A4A33;
+}
+
+.cvc{
+    position: absolute;
+    right: 50px;
+    color: #fff;
+}
+.card_details{
+    position: absolute;
+    bottom: 10%;
+    width: 90%;
+}
+
+.card_number{
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.more_card_details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-transform: uppercase;
+}
+.multiple_input_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.expiry_date{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;  
+}
+.cvc_box{
+    width: 50%;
+}
+.month_year{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;    
+}
+
+.button{
+    background-color:hsl(278, 68%, 11%);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.button:hover{
+    background-color:hsl(278, 68%, 11%);
+    cursor: pointer;
+}
+
+.error_box{
+    color: red;
+    font-size: 1rem;
+    margin: 0;
+    height: 15px;
+}
+
+.input_error{
+    border: 1px solid red;
+}
+
+
+@media only screen and (max-width:900px){
+    .form_left{
+        width: 100vw;
+        height: 40vh;
+    }
+    .form_mid{
+        width: 0vw;
+    }
+    .form_right{
+        width: 100vw;
+        margin-top: 6rem;
+    }
+   
+    .card_front{
+        left: 20px;
+        top: 55%;
+        z-index: 2;
+    }
+    .card_back{
+        right: 20px;
+        top: 10%;
+    }
+
+}
+
+@media only screen and (max-width:400px){
+    .form_left{
+        background-image: url('../../Assets/bg-main-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 30vh;
+    }
+    .form_mid{
+        width: 0vw;
+    }
+    .form_right{
+        width: 100vw;
+        margin-top: 5rem;
+    }
+    .form_right form{
+        width: 90%;
+    }
+    
+    .card_front{
+        height: 150px;
+        width: 85vw;
+        left: 20px;
+        top: 55%;
+        z-index: 2;
+    }
+    .card_back{
+        height: 150px;
+        width: 85vw;
+        right: 20px;
+        top: 10%;
+    }
+    .card_logo img{
+        width: 60px;
+    }
+    .card_number{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+  
+}
